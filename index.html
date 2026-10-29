@@ -2,172 +2,158 @@
 <html lang="ja">
 
 <head>
-    <!-- 文字コードをUTF-8に設定 -->
     <meta charset="UTF-8">
-
-    <!-- スマートフォン対応 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Webサイトのタイトル -->
     <title>R.T Portfolio</title>
 
-    <!-- CSSファイル -->
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         ヘッダー・ナビゲーション
-         ========================= -->
+    <!-- Header and Navigation -->
     <header class="gita-header">
-
         <div class="container nav-bar">
 
-            <!-- ロゴ -->
-            <h1 class="logo">R.T</h1>
+            <div class="logo">
+                <a href="#hero">R.T</a>
+            </div>
 
-            <!-- ナビゲーション -->
+
             <nav>
                 <ul class="nav-links">
-
                     <li>
                         <a href="#hero">ホーム</a>
                     </li>
-
                     <li>
-                        <a href="#about">概要</a>
+                        <a href="#about">自己紹介</a>
                     </li>
-
                     <li>
                         <a href="#services">授業内容</a>
                     </li>
-
                     <li>
                         <a href="#portfolio">ポートフォリオ</a>
                     </li>
-
                     <li>
                         <a href="#contact">お問い合わせ</a>
                     </li>
-
                 </ul>
             </nav>
 
         </div>
     </header>
 
+    <!-- Home -->
+    <section id="hero" class="hero section">
+        <div class="container">
+            <h2>ようこそ、私のホームページへ</h2>
+            <p>
+                私のプロフィールと学習内容をご紹介致します。
+            </p>
+            <a href="#about" class="hero-button">詳しく見る</a>
+        </div>
+    </section>
 
-
-
-
-    <!-- =========================
-         自己紹介
-         ========================= -->
+    <!-- About -->
     <section id="about" class="about section">
-
         <div class="container about-grid">
 
-            <div>
+            <div class="about-text">
                 <h2>自己紹介</h2>
 
                 <p>
-                    私は毎日学校へ行きます。 学校で日本語とプログラミングを勉強します。 勉強は難しいですが、楽しいです。
+                    私はトゥドゥ ルペシュです。<br> 現在、日本ウエルネスAI・IT・保育専門学校の
+                    <br> AIコミュニケーション学科で勉強しております。
                 </p>
             </div>
 
-            <!-- プロフィール写真 -->
             <img src="22.jpg.jpg" alt="プロフィール写真">
 
         </div>
-
     </section>
 
-
-    <!-- =========================
-         授業内容
-         ========================= -->
-    <section id="services" class="services-section">
+    <!-- Services -->
+    <section id="services" class="service-section section">
         <div class="container">
             <h2>授業内容</h2>
-        </div>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>HTML</h3>
-                <p>HTMLの基礎知識を学びます。</p>
-            </div>
-            <div class="service-item">
-                <h3>CSS</h3>
-                <p>CSSを用いてデザインを実装します。</p>
-            </div>
-            <div class="service-item">
-                <h3>JavaScript</h3>
-                <p>JavaScriptを用いてインタラクティブな機能を実装します。</p>
+
+            <div class="services-grid">
+
+                <div class="service-item">
+                    <h3>HTML</h3>
+                    <p>HTMLの基礎知識を学びます。</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>CSS</h3>
+                    <p>CSSを用いてデザインを実装します。</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>JavaScript</h3>
+                    <p>JavaScriptを用いてインタラクティブな機能を実装します。</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-
-    <!-- =========================
-         ポートフォリオ
-         ========================= -->
-    <section id="portfolio" class="section">
-
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio-section">
         <div class="container">
-
-            <h2>ポートフォリオ</h2>
+            <h2>ポートフォリオ自己紹介</h2>
 
             <p>
                 これまでに制作した作品を紹介します。
             </p>
 
-        </div>
+            <div class="portfolio-card">
+                <div class="portfolio-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrbXq1SZg4jjSJe1WbwDWIiyKsmQdyk0_YKgNpV4xwg&s=10" alt="作品1">
+                    <h3>作品1</h3>
+                    <p>作品1の説明文です。</p>
+                </div>
 
+                <div class="portfolio-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrbXq1SZg4jjSJe1WbwDWIiyKsmQdyk0_YKgNpV4xwg&s=10" alt="作品2">
+                    <h3>作品2</h3>
+                    <p>作品2の説明文です。</p>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXrbXq1SZg4jjSJe1WbwDWIiyKsmQdyk0_YKgNpV4xwg&s=10" alt="作品3">
+                    <h3>作品3</h3>
+                    <p>作品3の説明文です。</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-
-    <!-- =========================
-         お問い合わせ
-         ========================= -->
-    <section id="contact" class="section contact">
-
+    <!-- Contact -->
+    <section id="contact" class="contact section">
         <div class="container">
-
             <h2>お問い合わせ</h2>
 
-            <!-- 電話番号 -->
             <p class="phone">
-                JAPAN: +81 090-2913-3479
+                <a href="tel:+819029133479">CONTACT US</a>
             </p>
 
-            <!-- メールアドレス -->
             <p class="email-text">
-                お問い合わせはメールでお願いします。
+                お問い合わせは
                 <a href="mailto:tudurupesh2006@gmail.com">
                     メールアドレス
                 </a> にご連絡ください。
             </p>
-
         </div>
-
     </section>
 
-
-    <!-- =========================
-         フッター
-         ========================= -->
+    <!-- Footer -->
     <footer class="footer">
-
-        <p>
-            R.T // tudurupesh2006@gmail.com
-        </p>
-
+        <p>R.T // tudurupesh2006@gmail.com</p>
     </footer>
 
-
-    <!-- JavaScriptファイル -->
-    <script src="asmi.js"></script>
-
-</body>
+    <!-- JavaScript -->
+    <script src="index.js"></script>
 
 </html>
